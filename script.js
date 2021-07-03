@@ -9312,7 +9312,8 @@ let stations = {
     ]
 };
 
-
+// Sort by Code
+stations.features.sort((a, b) => (a.properties.code - b.properties.code));
 
 /**
  * Assign a unique id to each station. We'll use this `id`
